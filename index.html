@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <!-- Add Font Awesome CDN link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+            .social-icons {
+                display: flex;
+                gap: 15px;
+            }
+    
+            .social-icons a {
+                text-decoration: none;
+                font-size: 24px;
+                color: #333;
+                transition: color 0.3s ease;
+            }
+    
+            .social-icons a:hover {
+                color: #007bff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logooo.png" width="1000px" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#profiles">Profiles</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi,I'm<span> Nandini</span> <br></h1>
+                    <p>web developer</p>
+                </div>
+            </div>
+        </div>
+        <!-----------about------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am nandini from India.I am a web designer.
+                             I would like to become a business woman.
+                             my dream is to do social service
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        
+                        <!-- Tab Contents -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web development</span><br>Web app development</li>
+                                <li><span>App development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023-current</span><br>studying B.Tech in Computer Science Department from RVRJCCE <br>CGPA:9.05</li>
+                                <li><span>2021-2023</span><br>Intermediate from FutureFocus College <br>Marks:978/1000</li>
+                                <li><span>2020-2021</span><br>SSC 10th class from Vasavi High school <br>Marks:600/600</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2025</span><br>Python Fullstack Developer Intern
+                                    EduSkillsin collaboration with Andhra Pradesh State Council of Higher
+                                    Education — March 2025
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- certificates and social media profiles-->
+        <div id="profiles">
+            <div class="container">
+                <h1>Profiles & Badges</h1>
+                <div class="row">
+                    <ol><li><h3>Linkedin Profile</h3><br>
+                            <p><a href="https://www.linkedin.com/in/nandini-pinneboina-045584305/">click here to view my linked in profile</a></p><br>
+                        </li>
+                        <li><h3>Leetcode profile</h3><br>
+                                <ul><li>profile<p><a href="https://leetcode.com/u/nandunandini1177/">click here to view my profile</a></p><br></li>
+                                    <li> 50days streak badge<p><a href="https://leetcode.com/medal/?showImg=0&id=5580777&isLevel=false">view 50 days streak badge</a></p><br></li>
+                                    <li>my dcc november badge<p><a href="https://leetcode.com/medal/?showImg=0&id=5580789&isLevel=false">view my dcc november 2024 badge</a></p><br></li>
+                                    <li>my dcc december badge<p><a href="https://leetcode.com/medal/?showImg=0&id=5882172&isLevel=false">view my dcc december 2024 badge</a></p><br></li>
+                                </ul>
+                        </li>
+                        <li><h3>Hackerrank profile</h3><br>
+                            <ul>&#9;<li>profile<p><a href="https://www.hackerrank.com/profile/nandunandini1177">click here to view my hackerrank profile</a></p><br></li>
+                            </ul>
+                        </li>
+                        <li><h3>Codechef profile</h3><br>
+                            <ul><li>&#9;profile <p><a href="https://www.codechef.com/users/nandunandini11">click here to view my codechef profile</a></p><br></li>
+                                <li>bronze badge <p><a href="images/CodeChefBadge (7).png">click here to view my bronze badge</a></p><br></li>
+                                <li>ggolden badge <p><a href="images/CodeChefBadge (8).png">click here to view my golden badge</a></p><br></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- -------my projects------- -->
+        <div id="projects" class="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/image.png" alt="" height="200" width="500">
+                        <div class="layer">
+                            <h3>My own portfolio</h3>
+                            <p>click on the logo to view it</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--certificates-->
+        
+        <!-- contact-->
+        <div id="contacts" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>1234567890</p>               
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/ms.unknown_1107/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/NanduNandi97142"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/nandini-pinneboina-045584305/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div>
+                            <a href="Resume.pdf" download class="btn btn2">Download resume</a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet"> 
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="email" name="Email" placeholder="your email" required>
+                            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright Kevin.Made with <i class="fas fa-heart"></i> by easy tutorials</p>
+            </div>
+        </div>
+        
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname) {
+                // Remove active classes from all tab links and contents
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+        
+                // Add active class to the clicked tab link and the corresponding content
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu()
+            {
+                sidemenu.style.right="0";
+            }
+            function closemenu() {
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwzIqP9MQvCZoy9769gkh0lPoZFqkRy48ESeAObsrawzWFNTUPt-hpwI9AihCeR1VPdcw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                } )
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+    </body>
+</html>
+
