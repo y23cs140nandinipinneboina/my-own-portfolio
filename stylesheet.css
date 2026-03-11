@@ -10,6 +10,12 @@ body
     color:#fff;
     background:#080808;
 }
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:#aaa;
+}
 #header
 {
     width:100%;
@@ -366,5 +372,6 @@ form .btn2{
     margin-top: -10px;
     display: block;
 }
+
 
 
